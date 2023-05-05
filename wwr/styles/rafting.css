@@ -87,26 +87,27 @@ main section {
 
 .hero {
     position: relative;
-    padding: 60px 0;
     overflow: hidden;
 }
 
+.hero-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 h1 {
+    position: absolute;
+    top: 60px;
+    width: 100%;
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
     padding: 15px;
 }
 
-.hero-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-}
-
 .hero-content {
-    margin-top: 25px;
+    position: absolute;
+    top: 170px;
     padding: 20px 30px;
     background: rgba(255, 255, 255, 0.5);
 }

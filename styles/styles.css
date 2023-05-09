@@ -32,6 +32,7 @@ nav a {
 h1 {
     color: steelblue;
     margin: 10px 0;
+    padding-bottom: 12px;
     border-bottom: 1px solid steelblue;
 }
 
@@ -53,6 +54,7 @@ main img {
     box-shadow: 0 0 30px gray;
     float: right;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 aside {
@@ -60,12 +62,13 @@ aside {
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
+    margin: 1rem;
 }
 
 aside h2 {
     position: absolute;
     top: 47px;
-    left: 150px;
+    left: 38px;
 }
 
 aside img {
@@ -81,7 +84,6 @@ footer {
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #ddd;
@@ -90,4 +92,5 @@ footer {
 
 ul.box {
     clear: both;
+    padding-left: 2rem;
 }

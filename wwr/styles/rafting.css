@@ -22,6 +22,10 @@
     font-family: var(--paragraph-font);
 }
 
+body {
+    padding: 0 60px;
+}
+
 h1,
 h2,
 h3,
@@ -30,12 +34,19 @@ h5,
 h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
 }
 
 header {
     padding: 20px;
     background-color: var(--nav-background-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    align-items: center;
 }
 
 header,
@@ -45,24 +56,15 @@ footer {
     margin: 0 auto;
 }
 
-.header-column_img {
-    width: 30%;
-}
-
 .logo {
     display: block;
     margin: 0 auto;
 }
 
-.header-column_nav {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .header-nav {
     font-size: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .header-nav a {
@@ -82,7 +84,7 @@ footer {
 
 .hero,
 main section {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .hero {
@@ -100,7 +102,6 @@ h1 {
     position: absolute;
     top: 60px;
     width: 100%;
-    text-align: center;
     background: rgba(255, 255, 255, 0.5);
     padding: 15px;
 }
@@ -125,18 +126,53 @@ h1 {
     margin-left: 20px;
 }
 
+.history-content {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.adventure-content {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+}
+
+.adventure figure {
+    max-width: 100%;
+    display: grid;
+    align-content: end;
+}
+
+.adventure figcaption {
+    padding-top: 10px;
+    text-align: center;
+}
+
 footer {
     margin-top: 40px;
-    padding-bottom: 40px;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+footer p {
+    text-align: center;
+    padding: 0 20px;
 }
 
 .sociallinks {
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .sociallinks a {
     text-decoration: none;
     display: inline-block;
     width: 50px;
-    margin-right: 15px;
 }

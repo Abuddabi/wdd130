@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yegor Sotnikov | WDD 130 | Quiz Form</title>
+    <meta name="description" content="Quiz Page. WDD 130">
+    <meta name="author" content="Yegor Sotnikov">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <ol>
+                <li class="form-item">
+                    <label for="q1">What does acronym CSS stand for?</label>
+                    <input type="text" id="q1" name="q1">
+                </li>
+                <li class="form-item">
+                    <label for="q2">How are id and class attributes selected in CSS?</label>
+                    <textarea id="q2" name="q2" rows="4"></textarea>
+                </li>
+                <li class="form-item">
+                    <label for="q3">Which if the following is a valid CSS?</label>
+                    <select id="q3" name="q3">
+                        <option value="" selected disabled>Choose one ...</option>
+                        <option value="1">// margin: 0;</option>
+                        <option value="2"># margin: 0;</option>
+                        <option value="3">/* margin: 0; */</option>
+                    </select>
+                </li>
+                <li class="form-item form-item_with-code">
+                    <label for="q4">What is the bottom margin given this declaration?</label>
+                    <code>margin: 10px 5px 15px;</code>
+                    <input type="number" id="q4" name="q4">
+                </li>
+            </ol>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2023 | Quiz Form | Sotnikov Yegor</p>
+    </footer>
+</body>
+
+</html>

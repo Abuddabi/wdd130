@@ -192,8 +192,13 @@ footer p {
     grid-gap: 25px;
 }
 
+.contact-info__list {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
 .contact-info__list li + li {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .employees__content {

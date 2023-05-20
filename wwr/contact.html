@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting | Contact us</title>
-    <meta name="description" content="COntact us page. White Water Rafting company">
+    <meta name="description" content="Contact us page. White Water Rafting company">
     <meta name="author" content="Yegor Sotnikov">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -37,9 +37,9 @@
                     </li>
                 </ul>
                 <div class="map">
-                    <iframe
+                    <iframe class="google-map-iframe"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.4689521718062!2d92.86682869415586!3d56.01412376651293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7ae409d2e58d3%3A0x3417f5ff95e31510!2sLenina%20St%2C%2076%2F1%2C%20Krasnoyarsk%2C%20Krasnoyarskiy%20kray%2C%20Russia%2C%20660049!5e0!3m2!1sen!2smx!4v1684380778547!5m2!1sen!2smx"
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -66,30 +66,30 @@
             <form class="contact-form">
                 <label>
                     <span class="input-label">Name</span>
-                    <input type="text" name="name">
+                    <input type="text" name="name" id="name">
                 </label>
                 <label>
                     <span class="input-label">Email</span>
-                    <input type="email" name="email">
+                    <input type="email" name="email" id="email">
                 </label>
                 <div class="form-radio-group">
                     <span class="input-label">Purpose</span>
                     <ul>
                         <li>
                             <label>
-                                <input type="radio" name="purpose" value="General Inquiry">
+                                <input type="radio" name="purpose" id="purpose_1" value="General Inquiry">
                                 <span class="input-text">General Inquiry</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="purpose" value="Reservation Question">
+                                <input type="radio" name="purpose" id="purpose_2" value="Reservation Question">
                                 <span class="input-text">Reservation Question</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="radio" name="purpose" value="Website Suggestion">
+                                <input type="radio" name="purpose" id="purpose_3" value="Website Suggestion">
                                 <span class="input-text">Website Suggestion</span>
                             </label>
                         </li>
@@ -97,10 +97,10 @@
                 </div>
                 <label>
                     <span class="input-label">Message</span>
-                    <textarea name="message" rows="5"></textarea>
+                    <textarea name="message" id="message" rows="5"></textarea>
                 </label>
                 <label>
-                    <input type="checkbox" name="subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe">
                     <span class="input-text">Please subscribe me to the monthly newsletter.</span>
                 </label>
                 <button type="submit">Submit</button>

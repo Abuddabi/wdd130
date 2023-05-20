@@ -201,6 +201,10 @@ footer p {
     margin-top: 20px;
 }
 
+.google-map-iframe {
+    width: 100%;
+}
+
 .employees__content {
     margin-top: 25px;
     display: grid;

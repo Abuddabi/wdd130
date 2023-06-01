@@ -282,3 +282,108 @@ footer p {
     color: black;
     font-weight: bold;
 }
+
+.action {
+    min-height: 300px;
+    background-image: url("../images/trips_action.jpg");
+    padding: 0 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.action__content {
+    display: inline-block;
+    padding: 25px 40px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.action__text,
+.action__button {
+    margin-top: 30px;
+}
+
+.action__text {
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.booknow-button {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--heading-font);
+
+    cursor: pointer;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 15px;
+    background-color: var(--accent1-color);
+    transition: all 0.3s ease;
+    border: 1px solid black;
+}
+
+.booknow-button:hover {
+    box-shadow: 0 0 12px 2px rgba(33, 33, 33, 0.3);
+}
+
+.trips__grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.trips__item {
+    min-height: 100px;
+    text-align: center;
+}
+
+.trip_img,
+.trip__description {
+    margin-top: 15px;
+}
+
+.trips-table__table {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.trips-table__table td,
+.trips-table__table th {
+    border-width: 2px;
+    border-style: solid;
+    padding: 15px;
+}
+
+.trips-table__table td:first-child,
+.trips-table__table th:first-child {
+    width: 30%;
+    text-align: center;
+}
+
+.trips-main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+}
+
+.action {
+    grid-column: 1 / 5;
+}
+
+.trips {
+    grid-column: 1;
+    margin-top: 0;
+}
+
+.trips-table {
+    grid-column: 2 / 5;
+    margin-top: 0;
+}
